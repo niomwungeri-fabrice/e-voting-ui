@@ -1,0 +1,16 @@
+.login-form {
+    margin-top: 200px;
+}
+
+.login-input {
+    margin-bottom: 25px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgotPassword {
+    line-height: 40px;
+}

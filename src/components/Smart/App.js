@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import 'antd/dist/antd.css';
-import '../../styles/app.css'
-import Landing from "../Presentational/Landing";
-
+import 'rc-footer/assets/index.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Login from './Login';
+import Footer from 'rc-footer';
 export const App = () => {
-    return (
-        <div className="App">
-            <Landing/>
-        </div>
-    );
+  return (
+    <BrowserRouter>
+      <Fragment>
+        <Switch>
+          <Route path="/" exact component={Login} />
+        </Switch>
+        <Footer theme="light" bottom="@copyright All rights reserved to x company ltd. Tora 2020" />
+      </Fragment>
+    </BrowserRouter>
+  );
 };
-
