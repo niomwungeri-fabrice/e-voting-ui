@@ -4,26 +4,30 @@ import '../../styles/login.css';
 import { Link } from 'react-router-dom';
 import { UserOutlined, LockOutlined, LoginOutlined } from '@ant-design/icons';
 class Login extends Component {
-  handleLogin = e => {
+  handleLogin = (e) => {
     e.preventDefault();
     // todo: handle Login
-    alert('todo: handle Login', e);
+    const { history } = this.props;
+    history.push('/landing');
+  };
+  handleRememberMe = (e) => {
+    e.preventDefault();
+    alert('todo: handle remember me', e);
   };
   render() {
     return (
       <Row>
         <Col span={6} />
         <Col span={12}>
-          
           <Form className="login-form">
-          <div
-            style={{
-              textAlign: 'center'
-            }}
-          >
-            <h1>TORA</h1>
-            <h2>Administration</h2>
-          </div>
+            <div
+              style={{
+                textAlign: 'center',
+              }}
+            >
+              <h1>TORA</h1>
+              <h2>Administration</h2>
+            </div>
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
               className="login-input"
@@ -36,7 +40,7 @@ class Login extends Component {
               size="large"
               placeholder="Password"
               rules={[
-                { required: true, message: 'Please input your password!' }
+                { required: true, message: 'Please input your password!' },
               ]}
             />
             <Button
@@ -50,13 +54,15 @@ class Login extends Component {
             </Button>
             <div className="remember">
               <Form.Item name="remember">
-                <Checkbox>Remember me</Checkbox>
+                <Checkbox onClick={(e) => this.handleRememberMe(e)}>
+                  Remember me
+                </Checkbox>
               </Form.Item>
-              <Link className="forgotPassword" to="/">
+              <Link to="/forgot-psw" className="forgotPassword">
                 Forgot Password
               </Link>
             </div>
-            Or <Link to="/">register now!</Link>
+            Or <Link to="/sign-up">register now!</Link>
           </Form>
         </Col>
         <Col span={6} />
