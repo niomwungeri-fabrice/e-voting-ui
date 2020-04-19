@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
-import 'antd/dist/antd.css';
-import 'rc-footer/assets/index.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Login from './Login';
-import Footer from 'rc-footer';
-import SignUp from './SignUp';
-import ForgotPassword from './ForgotPassword';
-import Landing from '../Presentational/Landing';
+import React, { Fragment } from "react";
+import "antd/dist/antd.css";
+import "rc-footer/assets/index.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Login from "./Login";
+// import Footer from "rc-footer";
+import SignUp from "./SignUp";
+import ForgotPassword from "./ForgotPassword";
+import Landing from "../Presentational/Landing";
 export const App = () => {
   return (
     <BrowserRouter>
@@ -17,10 +17,10 @@ export const App = () => {
           <Route path="/forgot-psw" exact component={ForgotPassword} />
           <Route path="/landing" exact component={Landing} />
         </Switch>
-        <Footer
+        {/* <Footer
           theme="light"
           bottom="@copyright All rights reserved to x company ltd. Tora 2020"
-        />
+        /> */}
       </Fragment>
     </BrowserRouter>
   );
