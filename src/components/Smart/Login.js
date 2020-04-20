@@ -30,11 +30,7 @@ class Login extends Component {
     return (
       <div className="centered">
         <Form className="login-form">
-          <div
-            style={{
-              textAlign: "center",
-            }}
-          >
+          <div className="text-centered">
             <h1>TORA</h1>
             <h2>Administration</h2>
           </div>
@@ -58,7 +54,12 @@ class Login extends Component {
           <div className="separator">
             <span className="middle-separator">or</span>
           </div>
-          <Button onClick={this.handleSocialAuth} size="large" type="primary" block>
+          <Button
+            onClick={this.handleSocialAuth}
+            size="large"
+            type="primary"
+            block
+          >
             Login with
             <GoogleCircleFilled />
           </Button>
