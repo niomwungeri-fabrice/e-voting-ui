@@ -1,3 +1,19 @@
-.signup-form{
+.signup-form {
     width: 50%;
+}
+
+.sign-in-link {
+    margin-left: 5px;
+}
+
+.sign-in-zone {
+    margin-top: 40px;
+}
+
+.last-name-input {
+    margin-right: 2px;
+}
+
+.first-name-input {
+    margin-left: 2px;
 }
