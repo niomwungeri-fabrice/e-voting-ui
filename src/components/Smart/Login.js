@@ -1,15 +1,26 @@
 import React, { Component } from "react";
 import { Input, Button, Checkbox, Form } from "antd";
 import "../../styles/login.css";
-import '../../styles/shared.css'
+import "../../styles/shared.css";
 import { Link } from "react-router-dom";
-import { UserOutlined, LockOutlined, LoginOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  LockOutlined,
+  LoginOutlined,
+  GoogleCircleFilled,
+} from "@ant-design/icons";
 class Login extends Component {
   handleLogin = (e) => {
     e.preventDefault();
     // todo: handle Login
     const { history } = this.props;
-    history.push("/landing");
+    history.push("/profile");
+  };
+  handleSocialAuth = (e) => {
+    e.preventDefault();
+    // todo: social login
+    const { history } = this.props;
+    history.push("/profile");
   };
   handleRememberMe = (e) => {
     e.preventDefault();
@@ -17,7 +28,7 @@ class Login extends Component {
   };
   render() {
     return (
-      <div className='centered'>
+      <div className="centered">
         <Form className="login-form">
           <div
             style={{
@@ -43,6 +54,13 @@ class Login extends Component {
           <Button onClick={this.handleLogin} size="large" type="primary" block>
             <LoginOutlined />
             Login
+          </Button>
+          <div className="separator">
+            <span className="middle-separator">or</span>
+          </div>
+          <Button onClick={this.handleSocialAuth} size="large" type="primary" block>
+            Login with
+            <GoogleCircleFilled />
           </Button>
           <div className="remember">
             <Form.Item name="remember">

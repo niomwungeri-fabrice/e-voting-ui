@@ -3,3 +3,23 @@
     align-items: center;
     justify-content: center;
 }
+
+.separator {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    line-height: 0.1em;
+    margin: 20px 0 20px;
+}
+
+.middle-separator {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.add-flex-view{
+    display: flex;
+}
+.text-centered{
+    text-align: center;
+}
