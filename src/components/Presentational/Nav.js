@@ -14,6 +14,7 @@ export const Nav = () => {
           <Link
             style={{
               color: "white",
+              fontWeight: 'bold'
             }}
             to="/sign-in"
           >
@@ -23,7 +24,6 @@ export const Nav = () => {
             style={{
               color: "white",
               marginLeft: 20,
-              fontFamily: "Apple Braille",
               fontWeight: 'bold'
             }}
             to="/sign-in"
@@ -36,6 +36,7 @@ export const Nav = () => {
               marginRight: 20,
               marginLeft: 20,
               color: "black",
+              fontWeight: 'bold'
             }}
             className="ant-btn ant-btn-default"
             to="/sign-in"

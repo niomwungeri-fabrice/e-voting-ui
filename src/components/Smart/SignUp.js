@@ -4,6 +4,7 @@ import { Input, Button, Form } from "antd";
 import { Link } from "react-router-dom";
 import "../../styles/shared.css";
 import "../../styles/signup.css";
+import "../../styles/app.css";
 export default class SignUp extends Component {
   handleCreateAccount = (e) => {
     e.preventDefault();
@@ -13,7 +14,7 @@ export default class SignUp extends Component {
   };
   render() {
     return (
-      <div className="centered">
+      <div className="component-container centered">
         <Form className="signup-form">
           <div className="text-centered">
             <h1>TORA</h1>

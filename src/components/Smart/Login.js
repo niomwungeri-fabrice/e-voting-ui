@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Input, Button, Checkbox, Form } from "antd";
 import "../../styles/login.css";
 import "../../styles/shared.css";
+import '../../styles/app.css'
 import { Link } from "react-router-dom";
 import {
   UserOutlined,
@@ -28,7 +29,7 @@ class Login extends Component {
   };
   render() {
     return (
-      <div className="centered">
+      <div className="component-container centered">
         <Form className="login-form">
           <div className="text-centered">
             <h1>TORA</h1>
