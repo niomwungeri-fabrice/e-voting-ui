@@ -2,10 +2,12 @@ import React from "react";
 import "antd/dist/antd.css";
 import "../../styles/landing.css";
 import { Button } from "antd";
+import { Nav } from "./Nav";
 
 const Landing = () => {
   return (
     <div className="landing-background">
+      <Nav />
       <div className="landing-container">
         <div className="main-message">
           <div className="main-message-header">

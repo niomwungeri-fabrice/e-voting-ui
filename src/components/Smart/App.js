@@ -8,13 +8,12 @@ import SignUp from "./SignUp";
 import ForgotPassword from "./ForgotPassword";
 import Landing from "../Presentational/Landing";
 import { NotFound } from "../Presentational/NotFound";
-import { Nav } from "../Presentational/Nav";
 export const App = () => {
   return (
     <BrowserRouter>
       <Fragment>
         {/* todo: to be moved to component browser */}
-        <Nav />
+        {/* <Nav /> */}
         <div>
           <Switch>
             <Route path="/" exact component={Landing} />
@@ -23,7 +22,6 @@ export const App = () => {
             <Route path="/forgot-psw" exact component={ForgotPassword} />
             <Route component={NotFound} />
           </Switch>
-          connect
         </div>
         {/* <Footer
           theme="light"

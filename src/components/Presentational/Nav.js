@@ -6,41 +6,14 @@ export const Nav = () => {
     <div>
       <div className="landing-header-container">
         <div className="tora-title">Tora</div>
-        <div
-          style={{
-            justifyContent: "space-between",
-          }}
-        >
-          <Link
-            style={{
-              color: "white",
-              fontWeight: 'bold'
-            }}
-            to="/sign-in"
-          >
+        <div>
+          <Link className="nominate" to="/nominate">
             Nominate
           </Link>
-          <Link
-            style={{
-              color: "white",
-              marginLeft: 20,
-              fontWeight: 'bold'
-            }}
-            to="/sign-in"
-          >
+          <Link className="vote" to="/vote">
             Vote
           </Link>
-          <Link
-            style={{
-              marginTop: 6,
-              marginRight: 20,
-              marginLeft: 20,
-              color: "black",
-              fontWeight: 'bold'
-            }}
-            className="ant-btn ant-btn-default"
-            to="/sign-in"
-          >
+          <Link className="ant-btn ant-btn-default sign-in" to="/sign-in">
             Login
           </Link>
         </div>
