@@ -1,31 +1,38 @@
 import React from "react";
 import "antd/dist/antd.css";
 import "../../styles/landing.css";
-import landing from "../../assets/img/landing_background.png";
-import { Link } from "react-router-dom";
+import { Button } from "antd";
+import { Nav } from "./Nav";
 
 const Landing = () => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${landing})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <h1>Tora</h1>
-        <Link className="ant-btn ant-btn-default" to="/sign-in">
-          Login
-        </Link>
+    <div className="landing-background">
+      <Nav />
+      <div className="landing-container">
+        <div className="main-message">
+          <div className="main-message-header">
+            <span style={{ color: "yellow" }}>Tora</span>
+            <span style={{ color: "white" }}> will help you to vote</span>
+          </div>
+          <div style={{ fontSize: 17 }}>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </div>
+        </div>
+        <div className="proceed">
+          <div className="proceed-vote-text">
+            This time around we are voting for the employee of the month be sure
+            to check in every category and not passing on anyone.
+          </div>
+          <Button className="proceed-vote-btn" type="primary" size="large">
+            Proceed to vote
+          </Button>
+        </div>
       </div>
-      <hr />
     </div>
   );
 };

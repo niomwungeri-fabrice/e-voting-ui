@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Input, Button, Form } from "antd";
 import { UserOutlined } from "@ant-design/icons";
+import '../../styles/app.css'
 
 export default class ForgotPassword extends Component {
   handlePassword = () => {
@@ -8,7 +9,7 @@ export default class ForgotPassword extends Component {
   };
   render() {
     return (
-      <div className="centered">
+      <div className="component-container centered">
         <Form className="login-form">
           <div className="text-centered">
             <h1>TORA</h1>

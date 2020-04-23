@@ -1,0 +1,32 @@
+.landing-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tora-title {
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 20px;
+    font-size: 30px;
+    color: black;
+}
+
+.nominate {
+    color: white;
+    font-weight: bold;
+}
+
+.vote {
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.sign-in {
+    margin-top: 6px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: black;
+    font-weight: bold;
+}

@@ -1,0 +1,45 @@
+.landing-background {
+    background-image: url("../assets/img/landing_background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-message {
+    color: white;
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 3%;
+}
+
+.main-message-header {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+.proceed {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.proceed-vote-btn {
+    color: black;
+    background-color: yellow;
+    margin-top: 5%;
+    width: 50%;
+    height: 50px;
+}
+
+.proceed-vote-text {
+    margin-top: 58%;
+    font-size: 17px;
+    color: black;
+}
